@@ -12,7 +12,11 @@ public class BallMovement : MonoBehaviour
     void Start()
     {
         float y = 0;
-        int x = Random.Range(-300,300);
+        float x = 0;
+        if(Random.Range(-1,1) == 0)
+            x = Random.Range(100,300);
+        else
+            x = Random.Range(-300,-100);
         if(Random.Range(-1,1)==0)
             y = 300*Mathf.Sin(Mathf.Acos(x/300));
         else
