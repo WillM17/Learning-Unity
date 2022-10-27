@@ -11,7 +11,7 @@ public class BallMovement : MonoBehaviour
 
     void Start()
     {
-        float y = 0;
+        float y = 300;
         float x = 0;
         if(Random.Range(-1,1) == 0)
             x = Random.Range(100,300);
